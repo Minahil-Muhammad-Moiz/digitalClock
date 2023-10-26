@@ -27,25 +27,26 @@
 .container::before{
     content: '';
     width: 500px;
-    height: 100px;
+    height: 65px;
     /* background: rgb(168, 0, 0); */
     position: absolute;
     top: -20px;
     z-index: -1;
     border-radius: 10px 10px 0 0;
-    animation: box1 1000ms ease infinite running;
+    animation: box1 3000ms ease-in-out infinite running;
 }
 
 .container::after{
     content: '';
     width: 500px;
-    height: 100px;
+    height: 65px;
     /* background: rgb(10, 12, 97); */
     position: absolute;
     bottom: -20px;
+    /* right: -30px; */
     z-index: -1;
     border-radius: 0 0 10px 10px ;
-    animation: box2 1000ms ease infinite running;
+    animation: box2 3000ms ease-in-out infinite running;
 }
 @keyframes box1{
     0%{
