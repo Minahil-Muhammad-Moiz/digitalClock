@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: linear-gradient(45deg, rgb(18, 19, 65) , rgb(94, 37, 37)); 
+    color: white;
+    position: relative;
+    font-family: monospace;
+    width: 100%;
+    height: 100vh; 
+}
+
+.container{
+    width: 500px;
+    height: 130px;
+    background-color: rgba(145, 143, 161, 0.185);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.container::before{
+    content: '';
+    width: 500px;
+    height: 100px;
+    /* background: rgb(168, 0, 0); */
+    position: absolute;
+    top: -20px;
+    z-index: -1;
+    border-radius: 10px 10px 0 0;
+    animation: box1 1000ms ease infinite running;
+}
+
+.container::after{
+    content: '';
+    width: 500px;
+    height: 100px;
+    /* background: rgb(10, 12, 97); */
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+    border-radius: 0 0 10px 10px ;
+    animation: box2 1000ms ease infinite running;
+}
+@keyframes box1{
+    0%{
+        background-color: rgb(168, 0, 0);
+    }
+    100%{
+        background-color: rgb(10, 12, 97);
+    }
+}
+
+@keyframes box2{
+    0%{
+        background-color: rgb(10, 12, 97);
+    }
+    100%{
+        background-color: rgb(168, 0, 0);
+    }
+}
+.clock{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    /* border: 1px solid; */
+
+}
+
+.clock span{
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    display: inline-block;
+    width: 90px;
+    /* border: 1px solid; */
+
+}
+
+#hrs::after{
+    content: 'HOURS';
+    font-size: 16px;
+    position: relative;
+    bottom: -30px;
+    left: -65px;
+    /* border: 1px solid; */
+
+}
+
+#mins::after{
+    content: 'MINUTES';
+    font-size: 16px;
+    position: relative;
+    bottom: -30px;
+    /* border: 1px solid; */
+    left: -75px;
+}
+
+#sec::after{
+    content: 'SECONDS';
+    font-size: 16px;
+    position: relative;
+    bottom: -30px;
+    left: -75px;
+    /* border: 1px solid; */
+
+}
+
