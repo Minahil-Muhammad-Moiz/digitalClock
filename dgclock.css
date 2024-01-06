@@ -76,45 +76,8 @@
     border-radius: 10px;
     backdrop-filter: blur(20px);
     /* border: 1px solid; */
-
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-.clock span{
-    font-size: 70px;
-    font-weight: bolder;
-    text-align: center;
-    display: inline-block;
-    width: 90px;
-    /* border: 1px solid; */
-
-}
-
-#hrs::after{
-    content: 'HOURS';
-    font-size: 16px;
-    position: relative;
-    bottom: -30px;
-    left: -60px;
-    /* border: 1px solid; */
-
-}
-
-#mins::after{
-    content: 'MINUTES';
-    font-size: 16px;
-    position: relative;
-    bottom: -30px;
-    /* border: 1px solid; */
-    left: -71px;
-}
-
-#sec::after{
-    content: 'SECONDS';
-    font-size: 16px;
-    position: relative;
-    bottom: -30px;
-    left: -71px;
-    /* border: 1px solid; */
-
-}
 
